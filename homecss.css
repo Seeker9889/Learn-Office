@@ -1,0 +1,168 @@
+html {
+	/*forces a scrollbar on all pages to prevent jumping header*/
+	overflow: scroll;
+}
+
+h1 {
+	text-align:center;
+	font-size:250%;
+}
+
+h2 {
+	text-align:center;
+}
+
+h3 {
+	text-align:center;
+}
+
+h4 {
+	text-align:center;
+}
+
+
+body {
+	background-color:#F1F1F9;
+}
+
+
+p.focus {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 1%;
+	font-size:150%;
+}
+
+table, th, td, tr {
+	border-style: solid;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+/*Use in tutorials*/
+ol.jump {
+	list-style-type: upper-latin;
+}
+
+ol.one {
+	list-style-type: upper-latin;
+	font-weight:bold;
+}
+
+ol.two {
+	list-style-type: decimal;
+	font-weight:normal;
+}
+
+a.jumptop {
+	position: fixed;
+	bottom:40px;
+	left:40px;
+}
+
+a.jumpcategory {
+	position: fixed;
+	bottom:40px;
+	right:35px;
+}
+
+/*Display image in-line with text*/
+img.intext {
+	vertical-align:-50%;
+}
+
+ul {
+	/* Intentionally empty */
+}
+
+li {
+	/* Intentionally empty */
+}
+
+a {
+	/* Intentionally empty */
+}
+
+nav {
+	width: 100%;
+	margin-left: 10%;
+	position: fixed;
+	z-index:5;
+	top:0px;
+	left: 0px;
+	background-color:cadetblue;
+	border-radius: 0px 0px 25px 25px;
+}
+
+
+ul.n {
+	text-align: center;
+	font-family: Verdana;
+	list-style-type: none;
+	overflow: hidden;
+	font-weight: bold;
+	padding-top: 1%;
+	padding-right:10%;
+}
+
+li.n {
+	float: left;
+}
+
+li.nr {
+	float: right;
+}
+
+a.n:link, a.n:visited {
+	display: block;
+	width: 130px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	padding: 6px;
+}
+
+a.n:hover, a.n:active {
+	background-color: azure;
+}
+
+a.linker:link, a.linker:visited {
+	display: block;
+	background-color:white;
+	font-size:230%;
+	text-decoration:none;
+	color:#45464b;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: lightgray;
+	padding: 5px;
+}
+
+a.linker:hover, a.linker:active {
+		background-color:lightgrey;
+}
+
+section {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	overflow: hidden;
+}
+
+
+div.summary {
+	border-style: dotted;
+	border-collapse: collapse;
+	border-color: skyblue;
+	background-color: lightblue;
+	padding: 10px;
+	margin: 20px;
+}
+
+.anchor {
+	display:block;
+	height:100px;
+	margin-top:-100px;
+	visibility:hidden;
+}

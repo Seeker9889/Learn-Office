@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./homecss.css">
+	
+	<script>
+	function MathFunction() {
+		var num1 = Number(document.getElementById("FirstNum").value);
+		var num2 = Number(document.getElementById("SecondNum").value);
+		var addChecked = Boolean(document.getElementById("add").checked);
+		var result = 0;
+		if (addChecked) {
+			result = num1 + num2;
+		}
+		else {
+			result = num1 - num2;
+		}
+		document.getElementById("answer").innerHTML ="The answer is: " + result;
+	}
+	
+		function slider(val) {
+			document.getElementById('rangeNum').value=val;
+		}
+	
+	</script>
+	
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	function initialize() {
+		var mapProp= {
+		center:new google.maps.LatLng(33.724971, -117.785474) ,
+		zoom:20,
+		mapTypeId:google.maps.MapTypeId.SATELLITE
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	
+	<noscript>
+	No JavaScript!
+	</noscript>
+	
+</head>
+
+<body>
+
+<nav>
+<ul class="n">
+	<li class="n"><a class="n" href="./index.html">Home</a></li>
+	<li class="n"><a class="n" href="./Contact.html">Contact</a></li>
+	<li class="nr"><a class="n" href="./ShortCutKeyList.html" target="_blank">Quick reference</a></li>
+</ul>
+</nav>
+
+<br>
+<section>
+<h1>Contact</h1>
+<ul>
+	<li><a href="https://support.office.com/en-us/article/Office-Training-Center-b8f02f81-ec85-4493-a39b-4c48e6bc4bfb">Official Microsoft Tutorials</a></li>
+	<p>While I think that a holistic approach is the best way to get familiar with Office, here you can find the tutorials approved by Microsoft, the folks who created Office.</p>
+	<li>Author: Sam George</li>
+	<p>I'm a student at Emmaus Bible College blessed with extensive knowledge of Word, PowerPoint, and Excel, and I'm cursed with extensive knowledge of Access.</p>
+	<p>Do send all carrier pigeons to this location:</p>
+	<div id="googleMap" style="width:500px; height:380px"></div>
+	
+</ul>
+<section>
+</body>
+
+</html>

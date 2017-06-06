@@ -1,0 +1,25 @@
+body {
+	margin: 15%;
+}
+
+h1 {
+	text-align:center;
+}
+
+h2 {
+	text-align:center;
+}
+
+table, th, td, tr {
+	border-style: solid;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+ol.one {
+	list-style-type: upper-latin;
+}
+
+ol.two {
+	list-style-type: decimal;
+}
